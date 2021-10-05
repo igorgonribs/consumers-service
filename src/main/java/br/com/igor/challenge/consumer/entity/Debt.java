@@ -16,13 +16,14 @@ import lombok.Data;
 public class Debt {
 
 	@Id
+	@JsonIgnore
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	public String description;
 	public double value;
 
 	@ManyToOne
-	@JoinColumn(name = "client_debts_cpf")
+	@JoinColumn(name = "clientdebtscpf")
 	@JsonIgnore
 	private ClientDebts clientDebts;
 }

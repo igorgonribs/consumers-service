@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "8f869664-ea54-403e-8d7d-ff52a7da2d65",
+		"name": "Consumer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cloud",
+			"item": [
+				{
+					"name": "Get last update",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "appxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "appxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://20.85.177.97:8080/api/last-update/11094463655",
+							"protocol": "http",
+							"host": [
+								"20",
+								"85",
+								"177",
+								"97"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"last-update",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client goods",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "userxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://20.85.177.97:8080/api/client/goods/11094463655",
+							"protocol": "http",
+							"host": [
+								"20",
+								"85",
+								"177",
+								"97"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"goods",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client debts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "bankxptopassword",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bankxpto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://20.85.177.97:8080/api/client/debts/11094463655",
+							"protocol": "http",
+							"host": [
+								"20",
+								"85",
+								"177",
+								"97"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"debts",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "Get last update",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "appxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "appxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/last-update/11094463655",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"last-update",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client goods",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "userxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/goods/11094463655",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"goods",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client debts",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "bankxptopassword",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "bankxpto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/debts/11094463655",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"debts",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
