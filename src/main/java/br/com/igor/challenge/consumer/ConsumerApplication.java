@@ -48,7 +48,7 @@ public class ConsumerApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//loadLastUpdates();
+		loadLastUpdates();
 		loadClientDebts();
 		loadClientGoods();
 	}

@@ -22,7 +22,7 @@ public class Debt {
 	public double value;
 
 	@ManyToOne
-	@JoinColumn(name = "client_debts_cpf")
+	@JoinColumn(name = "clientdebtscpf")
 	@JsonIgnore
 	private ClientDebts clientDebts;
 }
