@@ -16,6 +16,7 @@ import lombok.Data;
 public class Good {
 
 	@Id
+	@JsonIgnore
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	public String description;

@@ -16,6 +16,7 @@ import lombok.Data;
 public class Debt {
 
 	@Id
+	@JsonIgnore
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	public String description;
