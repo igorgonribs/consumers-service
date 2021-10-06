@@ -53,3 +53,7 @@ Entretanto, com a versão atual do projeto não será possível executar a aplic
 * Utilizar o serviço [Azure Key Vault](https://docs.microsoft.com/pt-br/azure/key-vault/general/basic-concepts) para armazenar informações de acesso aos bancos de dados em segurança.
 * Avaliar a necessidade de incluir um Gateway de Aplicação. O uso de serviço [Application gateway](https://docs.microsoft.com/pt-br/azure/application-gateway/overview) do azure pode trazer benefícios como balanceamento de carga e redirecionamento das requisições para as aplicações.
 * Avaliar a necessidade de escalar os serviços, fazendo o deploy de novos contêineres.
+
+#### Esboço da solução proposta
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/solucao_proposta.png?raw=true)
+
