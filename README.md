@@ -1,4 +1,6 @@
 # consumers-service
+Sistema que realiza consulta informações relacionadas a dívidas e bens de um cliente, bem como as últimas atividades relacionadas a um CPF específico.
+
 Inicialmente o projeto nasceu on premise, mas após a implementação das funcionalidades básicas os componentes do sistema foram completamente migrados para o Microsoft Azure.
 
 ## Desenho da solução atual
@@ -34,6 +36,10 @@ Em seguida, foi realizada a migração da base de dados para uma API do Azure Co
 Para testar a aplicação, basta importar o arquivo *consumer.postman_collection.json* no software *Postman* (ou algum semelhante) e realizar os requests contidos na pasta *cloud* da collection.
 As requisições contidas na pasta *local* da collection só devem funcionar caso a aplicação esteja sendo executada localmente.
 Entretanto, com a versão atual do projeto não será possível executar a aplicação localmente pois algumas informações de acesso aos bancos de dados foram omitidas do repositório públio do Github.
+
+#### Exemplo:
+
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/evidencia.png?raw=true)
 
 ## Planos Futuros
 * Adicionar [Criptografia em repouso](https://docs.microsoft.com/pt-br/azure/security/fundamentals/encryption-atrest) e [Criptografia em trânsito](https://docs.microsoft.com/pt-br/compliance/assurance/assurance-encryption-in-transit) às bases de dados A e B para acrescentar segurança aos dados sensíveis.
