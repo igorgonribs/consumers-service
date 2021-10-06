@@ -12,33 +12,22 @@
 					"name": "Get last update",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "appxpto",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "appxptopassword",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://20.85.177.97:8080/api/last-update/11094463655",
+							"raw": "http://52.191.17.225:8080/no-security/api/last-update/11094463655",
 							"protocol": "http",
 							"host": [
-								"20",
-								"85",
-								"177",
-								"97"
+								"52",
+								"191",
+								"17",
+								"225"
 							],
 							"port": "8080",
 							"path": [
+								"no-security",
 								"api",
 								"last-update",
 								"11094463655"
@@ -68,13 +57,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://20.85.177.97:8080/api/client/goods/11094463655",
+							"raw": "http://52.191.17.225:8080/api/client/goods/11094463655",
 							"protocol": "http",
 							"host": [
-								"20",
-								"85",
-								"177",
-								"97"
+								"52",
+								"191",
+								"17",
+								"225"
 							],
 							"port": "8080",
 							"path": [
@@ -108,19 +97,60 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://20.85.177.97:8080/api/client/debts/11094463655",
+							"raw": "http://52.191.17.225:8080/api/client/debts/11094463655",
 							"protocol": "http",
 							"host": [
-								"20",
-								"85",
-								"177",
-								"97"
+								"52",
+								"191",
+								"17",
+								"225"
 							],
 							"port": "8080",
 							"path": [
 								"api",
 								"client",
 								"debts",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client goods for Machine Learning",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "userxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://52.191.17.225:8080/api/client/goods/machine-learning/11094463655",
+							"protocol": "http",
+							"host": [
+								"52",
+								"191",
+								"17",
+								"225"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"goods",
+								"machine-learning",
 								"11094463655"
 							]
 						}
@@ -136,30 +166,19 @@
 					"name": "Get last update",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "appxpto",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "appxptopassword",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/last-update/11094463655",
+							"raw": "http://localhost:8080/no-security/api/last-update/11094463655",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
+								"no-security",
 								"api",
 								"last-update",
 								"11094463655"
@@ -199,6 +218,44 @@
 								"api",
 								"client",
 								"goods",
+								"11094463655"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client goods for Machine Learning",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userxpto",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "userxptopassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/client/goods/machine-learning/11094463655",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"client",
+								"goods",
+								"machine-learning",
 								"11094463655"
 							]
 						}
