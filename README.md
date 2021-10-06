@@ -1,9 +1,10 @@
 # consumers-service
 Sistema que realiza consulta informações relacionadas a dívidas e bens de um cliente, bem como as últimas atividades relacionadas a um CPF específico.
+
 Inicialmente o projeto nasceu on premise, mas após a implementação das funcionalidades básicas os componentes do sistema foram completamente migrados para o Microsoft Azure.
 
 ## Desenho da solução atual
-![alt text](https://github.com/igorgonribs/consumers-service/blob/main/desenho_solucao.png?raw=true)
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/images/desenho_solucao.png?raw=true)
 
 ## A aplicação Java
 Desenvolvida com Spring Boot eJava 11, foi criada uma imagem docker da aplicação utilizando um Dockerfile, e, em seguida, a aplicação foi implantada no Microsoft Azure através do Serviço de Instâncias de Contêiner
@@ -24,29 +25,37 @@ password: userxptopassword
 ```
 
 ### Consulta à base A
-Para a consulta à Base A foi criado o seguinte endpoint:
+Para a consulta à Base A foi criado o seguinte *endpoint*:
 ```
 /api/client/debts/{cpf}
 ```
-Este endpoint exige autenticação conforme descrito acima.
-Exemplo de retorno:
+Este *endpoint* exige autenticação conforme descrito acima.
+
+#### Exemplo de retorno:
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/images/debts_example.png?raw=true)
 
 ### Consulta à base B
-Para a consulta à Base B foram criados os seguintes endpoints:
+Para a consulta à Base B foram criados os seguintes *endpoints*:
 ```
 a) /api/client/goods/{cpf}
 b) /api/client/goods/machine-learning/{cpf}
 ```
 Ambos exigem autenticação conforme descrito acima.
-Exemplos de retorno:
+Para o *endpoint* b) foi realizada uma pequena formatação para uso de algoritmos de *machine learning*. 
+
+#### Exemplos de retornos:
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/images/goods_example.png?raw=true)
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/images/goods_ml_example.png?raw=true)
 
 ### Consulta à base C
-Para a consulta à Base C foi criado o seguinte endpoint:
+Para a consulta à Base C foi criado o seguinte *endpoint*:
 ```
 /no-security/api/last-update/{cpf}
 ```
-Este endpoint não exige autenticação. Devido à necessidade de velocidade nas consultas à base C foi implementado um sistemade cache para este endpoint.
-Exemplo de retorno:
+Este *endpoint* não exige autenticação. Devido à necessidade de velocidade nas consultas à base C foi implementado um sistemade *cache* para este *endpoint*.
+
+#### Exemplo de retorno:
+![alt text](https://github.com/igorgonribs/consumers-service/blob/main/images/last_update_example.png?raw=true)
 
 ## Base de dados A e B
 Para as bases de dados A e B decidiu-se utilizar um banco de dados relacional. Inicialmente foi usado o banco h2, um banco de dados em memória, a fim de agilizar o desenvolvimento.
