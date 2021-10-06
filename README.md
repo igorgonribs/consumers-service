@@ -70,6 +70,8 @@ Para testar a aplicação, basta importar o arquivo *consumer.postman_collection
 As requisições contidas na pasta *local* da collection só devem funcionar caso a aplicação esteja sendo executada localmente.
 Entretanto, com a versão atual do projeto não será possível executar a aplicação localmente pois algumas informações de acesso aos bancos de dados foram omitidas do repositório públio do Github.
 
+Os cpfs cadastrados nas bases de dados são: 11094463655 e 19191160014.
+
 ## Planos Futuros
 * Adicionar [Criptografia em repouso](https://docs.microsoft.com/pt-br/azure/security/fundamentals/encryption-atrest) e [Criptografia em trânsito](https://docs.microsoft.com/pt-br/compliance/assurance/assurance-encryption-in-transit) às bases de dados A e B para acrescentar segurança aos dados sensíveis.
 * Utilizar o serviço [Azure Key Vault](https://docs.microsoft.com/pt-br/azure/key-vault/general/basic-concepts) para armazenar informações de acesso aos bancos de dados em segurança.
