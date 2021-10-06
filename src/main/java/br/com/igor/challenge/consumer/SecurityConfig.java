@@ -16,7 +16,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/api/**").hasRole(ROLE_CONSUMER).and().httpBasic();
+		http.authorizeRequests().antMatchers("/no-security/**").permitAll().antMatchers("/api/**").hasRole(ROLE_CONSUMER).and().httpBasic();
 	}
 
 	@Autowired

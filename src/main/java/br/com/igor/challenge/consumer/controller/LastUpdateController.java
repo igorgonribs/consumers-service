@@ -13,7 +13,7 @@ import br.com.igor.challenge.consumer.entity.LastUpdate;
 import br.com.igor.challenge.consumer.repository.LastUpdateRepository;
 
 @RestController
-@RequestMapping(path = "/api/last-update")
+@RequestMapping(path = "/no-security/api/last-update")
 public class LastUpdateController {
 	
 	@Autowired
